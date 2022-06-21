@@ -1,0 +1,63 @@
+.main{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    width: 100%;
+}
+.area{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main span{
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.formData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    border: 1px solid black;
+    width: 30%;
+    margin: 0 auto;
+}
+.formData input{
+    margin: 10px 0;
+    outline: none;
+}
+.name{
+    border: 2px solid red;
+}
+.nameeror{
+    font-size: 10px;
+    margin-top: -10px;
+    border: 1px solid #ff0000;
+    margin-left: 112px;
+
+}
+.nameerorpassword {
+    font-size: 10px;
+    margin-top: 0px;
+    border: 1px solid red;
+    margin-left: 36px;
+}
+
+button{
+    margin-top: 15px;
+}
