@@ -1,63 +1,91 @@
-.main{
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.calculator{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 100%;
-    width: 100%;
-}
-.area{
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main span{
-    font-size: 70px;
-    cursor: pointer;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.formData{
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.main{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 40px;
-    border: 1px solid black;
-    width: 30%;
-    margin: 0 auto;
+    justify-content: center;
 }
-.formData input{
-    margin: 10px 0;
+
+.hide-completed{
+    align-self: flex-end;
+    display: flex;
+    margin-right: 70px;
+}
+.hide-completed input[type="checkbox"]{
+    background-color: #008594;
+}
+.hide-completed p{
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.main>p{
+    color: #174348;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.form input{
+    width: 954px;
+    min-height: 52px;
+    border-radius: 4px;
+    border: 1px solid yellow;
+    padding: 13px 16px;
+    font-size: 18px;
     outline: none;
 }
-.name{
-    border: 2px solid red;
+.form input::placeholder{
+    color: #DFDFDF;
 }
-.nameeror{
-    font-size: 10px;
-    margin-top: -10px;
-    border: 1px solid #ff0000;
-    margin-left: 112px;
+.error-length p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FF3104;
+}
+.error-value{
+    border: 1px solid #FF3104 !important;
+}
+.form button{
+    width: 100px;
+    height: 52px;
+    background-color: #008594;
+    border-radius: 4px;
+    color: white;
+    margin-left: 24px;
+    border: none;
+}
 
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
 }
-.nameerorpassword {
-    font-size: 10px;
-    margin-top: 0px;
-    border: 1px solid red;
-    margin-left: 36px;
+.title p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    color: #ACACAC;
 }
-
-button{
-    margin-top: 15px;
+.title h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: #666666;
 }

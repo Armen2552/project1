@@ -1,15 +1,10 @@
 import './App.css';
-// import CalculateBox from "./Component/CalculateBox";
-import FormData from "./Component/FormData";
+import AddForm from "./Components/Home-page";
 
 function App() {
   return (
       <div className="App">
-          {/*<CalculateBox />*/}
-          {/*<CalculateBox />*/}
-          {/*<CalculateBox />*/}
-          <FormData />
-
+          <AddForm />
       </div>
   );
 }
